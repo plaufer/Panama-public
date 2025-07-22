@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panama – Login</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <!-- Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- Hero Image with Login/Register Box -->
+  <header class="hero">
+    
+    <div class="image-container">
+      <img src="./images/ChatGPt_Interrail.png" alt="Junge Menschen auf Interrailreise" class="hero-image" />
+      <div class="image-credit">Bild generiert mit KI (ChatGPT)</div>
+    </div>
+
+    <!-- Login -->
+    <div class="auth-box" id="auth-box">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="E-Mail" required />
+        <input type="password" id="password" placeholder="Passwort" required />
+        <button type="submit">Login</button>
+        <p>Kein Konto? <a href="#" id="show-register">Registrieren</a></p>
+      </form>
+
+      <!-- Register -->
+      <form id="register-form" style="display:none;">
+        <input type="text" id="reg-name" placeholder="Name" required />
+        <input type="email" id="reg-email" placeholder="E-Mail" required />
+        <input type="password" id="reg-password" placeholder="Passwort" required />
+        <select id="reg-role">
+          <option value="bewerber">Bewerber*in</option>
+          <option value="funder">Funder</option>
+        </select>
+        <button type="submit">Registrieren</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Programmdescription -->
+  <section class="intro-text">
+    <h1>Willkommen in Panama</h1>
+    <p>
+      Du willst Europa entdecken und dabei neue Freunde finden? <br />
+      Erlebe deine eigene "Abenteuerreise nach Panama", wie Tiger und Bär mit ihrer Tigerente.
+      Bewirb dich auf eine Förderung – oder unterstütze andere auf ihrer Reise!
+    </p>
+    <a href="profile.html" class="cta-button">Jetzt bewerben</a>
+    <p>
+      <h2>Die Idee:</h2> 
+      Das Projekt "Oh wie schön ist ..." entstand im Rahmen der Generation Europa 2025 und möchte jungen Menschen mit weniger Geld ermöglichen Europa mit dem Zug zu bereisen.
+      <h2>Der Ablauf:</h2>
+      Du registrierst dich auf der Plattform und erstellst deine Bewerbung. Darin kannst du dein Reiseland, deine Motivation und das benötigte Budget angeben. 
+      Nach der Veröffentlichung können Spenden für deine Beewrbung abgegeben werden und sobald der Zielbetrag erreicht ist, kann deine Reise losgehen.
+      <h2>Dein Benefit:</h2> 
+      Du kannst bei uns kostenlos dein Profil und deine Bewerbung erstellen. Die Spenden ermöglichen dir eine unvergessliche Reise, auf der du nicht nur neue Orte entdecken wirst, sondern auch den europäischen Gedanken von offenen Grenzen und länderübergreifender Freundschaft erleben wirst. 
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="mailto:panama@gmail.com">Kontakt</a>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/app.js"></script>
+  <script type="module" src="./js/firebase-config.js"></script>
+</body>
+</html>

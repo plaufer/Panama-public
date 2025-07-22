@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Panama – Bewerbungen</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+  <!--Filter-->
+  <div class="filter-section">
+    <input type="text" id="filter-name" placeholder="Name" />
+    <input type="number" id="filter-goal" placeholder="Max. Zielbudget (€)" />
+    <input type="text" id="filter-id" placeholder="Bewerbungs-ID" />
+    <button id="apply-filters">Filtern</button>
+  </div>
+  <!--Sorting-->
+  <div class="sort-section">
+    <label for="sort-by">Sortieren nach:</label>
+    <select id="sort-by">
+      <option value="">Keine Sortierung</option>
+      <option value="date_desc">Datum (neueste zuerst)</option>
+      <option value="date_asc">Datum (älteste zuerst)</option>
+      <option value="goal_asc">Zielbudget (aufsteigend)</option>
+      <option value="goal_desc">Zielbudget (absteigend)</option>
+      <option value="progress_asc">% erreicht (aufsteigend)</option>
+      <option value="progress_desc">% erreicht (absteigend)</option>
+    </select>
+  </div>
+
+  <h1>Übersicht der Bewerbungen</h1>
+  <div id="applications-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="mailto:panama@gmail.com">Kontakt</a>
+    </div>
+  </footer>
+  
+  <script type="module" src="./js/application-overview.js"></script>
+</body>
+</html>

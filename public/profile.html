@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Panama – Profil</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <!-- Profilseite -->
+  <div id="navbar-placeholder"></div>
+  <h1>Willkommen auf deinem Profil</h1>
+
+  <div id="profile-info">
+    <p><strong>Name:</strong> <span id="profile-name"></span></p>
+    <p><strong>E-Mail:</strong> <span id="profile-email"></span></p>
+    <p><strong>Rolle:</strong> <span id="profile-role"></span></p>
+  </div>
+
+  <button id="edit-profile-button">Profil bearbeiten</button>
+  <button id="bewerbung-button" style="display: none;">Meine Bewerbung</button>
+  <button id="logout-button">Logout</button>
+
+  <!-- Profilbearbeitung -->
+  <div id="edit-form" style="display: none;">
+    <h2>Profil bearbeiten</h2>
+    <input type="text" id="edit-name" placeholder="Name" />
+    <select id="edit-role">
+      <option value="bewerber">Bewerber*in</option>
+      <option value="funder">Funder</option>
+    </select>
+    <button id="save-profile">Speichern</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="mailto:panama@gmail.com">Kontakt</a>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/profile.js"></script>
+</body>
+</html>

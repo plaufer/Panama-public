@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Panama – Bewerbung</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+  <h1>Bewerbung erstellen</h1>
+
+  <!-- Applicatiton Form -->
+  <form id="application-form">
+    <label for="title">Titel der Bewerbung:</label>
+    <input type="text" id="title" placeholder="z.B. Tiegerente's Reise nach Panama" required />
+
+    <label for="description">Beschreibung:</label>
+    <br>
+    <textarea id="description" rows="6" placeholder="Wohin möchtest du verreisen? Und warum solltest du unterstützt werden?" required></textarea>
+    <br>
+    <br>
+    <label for="amount">Gewünschter Förderbetrag (€):</label>
+    <input type="number" id="amount" required />
+    
+
+    <button type="button" id="save-draft">Entwurf speichern</button>
+    <button type="submit" id="submit-final">Bewerbung veröffentlichen</button>
+  </form>
+
+  <p id="status-msg"></p>
+
+  <button onclick="window.location.href='profile.html'">Zurück zum Profil</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="mailto:panama@gmail.com">Kontakt</a>
+    </div>
+  </footer>
+  
+  <script type="module" src="./js/application.js"></script>
+</body>
+</html>
