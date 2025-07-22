@@ -39,7 +39,7 @@ git clone https://github.com/plaufer/Panama.git
 1. Gehe zu https://console.firebase.google.com
 2. Erstelle ein neues Projekt und folge den Anweisungen
 3. Aktiviere Firestore, Hosting und Authentication
-4. Füge deine Firebase Konfigurationsdaten (apiKey, authDomain, projectId, storageBucket, messagingSenderId: "677339275427",
+4. Füge deine Firebase Konfigurationsdaten (apiKey, authDomain, projectId, storageBucket, messagingSenderId,
     appId, measurementId) in firebase-config.js ein
 
 # Firebase CLI installieren
